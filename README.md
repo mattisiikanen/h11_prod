@@ -88,7 +88,12 @@ Ai että on se ihanaa, kun hommat pelittävät!
 
 ### Disable DEBUG
 Klo 20:48</br>
-Viimeisenä osiona oli vielä kytkeä pois päältä Debug - mode.
+Viimeisenä osiona oli vielä kytkeä pois päältä Debug - mode. komennolla ```micro yritysoy/settings.py``` ja muokkaamalla seuraava tieto:</br>
+![Kuva13](https://user-images.githubusercontent.com/122887740/221951335-a29cd93d-b163-49ab-9b9f-9bf94bc8129e.png)</br>
+
+Tallensin tiedoston ja lopetin tähän tältä erää.
+
+
 
 
 ## Lopetus
