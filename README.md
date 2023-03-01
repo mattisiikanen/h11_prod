@@ -22,7 +22,7 @@ Virtuaalikoneen speksit:
 Aloitin työt käynnistämällä Debianin Hyper-V hostillani 28.2.2023 klo 19:37. Tehtävän tarkoituksena oli tutustua Djangon tuotantopalvelimen konfigurointiin ja jatkaa täten edellisviikon Django harjoitteita.
 
 ## a) Tee Djangon tuotantoasennus.
-Käytin tehtävää varten opettajamme Tero Karvisen ohjeistusta Djangon tuotantoon asennuksesta. Ihan ensimmäisenä päivitin repositoriot komennolla ```sudo apt-get update```, jonka jälkeen asensin vielä Microon bash-completionin ```sudo apt-get -y install micro bash-completion```, jotta saan hyödynnettyä tabulatoria komentojen täydennykseen. Samassa vielä asetin oletus tekstieditoriksi micron komennolla ```export EDITOR=micro```. Ohjeessa puhuttiin seuraavaksi Apache2:n asennuksesta, mutta jätin sen väliin, koska virtuaalikoneella oli jo Apache2 asennettuna & konfiguroituna. Siirryin siis suoraan Djangon asennukseen VirtualEnv-ympäristössä.
+Käytin tehtävää varten opettajamme Tero Karvisen ohjeistusta Djangon tuotantoon asennuksesta. Ihan ensimmäisenä päivitin repositoriot komennolla ```sudo apt-get update```, jonka jälkeen asensin vielä Microon bash-completionin ```sudo apt-get -y install micro bash-completion```, jotta sain hyödynnettyä tabulatoria komentojen täydennykseen. Samassa vielä asetin oletus tekstieditoriksi micron komennolla ```export EDITOR=micro```. Ohjeessa puhuttiin seuraavaksi Apache2:n asennuksesta, mutta jätin sen väliin, koska virtuaalikoneella oli jo Apache2 asennettuna & konfiguroituna. Siirryin siis suoraan Djangon asennukseen VirtualEnv-ympäristössä.
 
 ### Uuden VirtualHostin luonti ja konfigurointi tuotantoympäristöä varten
 Klo 19:42 </br>
