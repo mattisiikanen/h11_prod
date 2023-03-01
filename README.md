@@ -93,11 +93,42 @@ Viimeisenä osiona oli vielä kytkeä pois päältä Debug - mode. komennolla ``
 
 Tallensin tiedoston ja lopetin tähän tältä erää.
 
+Jatkoin seuraavana päivänä 1.3.2023 klo 15.00 käynnistämällä jälleen virtuaalikoneen. Aktivoin jälleen VirtualEnv ympäristön komennolla ```source env/bin/activate``` ja siirryin varmistamaan ympäristön ```which pip``` varmistuakseni jälleen oikeasta ympäristöstä, joka palautti seuraavaa ```/home/mattis/publicwsgi/env/bin/pip```, olin siis oikeassa ympäristössä.
 
+Seuraavaksi kosketin ```wsgi.py``` tiedostoa touch komennolla ```touch yritysoy/wsgi.py``` ja käynnistin Apachen uudelleen. Nyt oli luvassa vielä testaus: </br>
+![Kuva14](https://user-images.githubusercontent.com/122887740/222148925-cbcd58c8-a946-4c58-bce4-19ba3112c719.png)</br>
+![Kuva15](https://user-images.githubusercontent.com/122887740/222148932-530c5ad4-5e03-4cc2-bccf-8024d332d437.png)</br>
+
+Localhostissa ei ollut mitään, niin kuin ei vielä tässä vaiheessa kuulunutkaan olla. Seuraavaksi oli aika lisätä sivustolle materiaalia ja siirryinkin muokkaamaan microlla settings.py tiedostoa lisäämällä sinne tämän arvon: </br>
+![Kuva16](https://user-images.githubusercontent.com/122887740/222150008-7eb3570c-a209-4ace-8acf-bdc6ba2dce29.png)</br>
+Tällä asetuksella määritettiin staattinen juuri sivustolle. Nyt oli aika vielä puskea uudet konfiguraatiot käyttöön komennolla ```./manage.py collectstatic``` </br>
+![Kuva17](https://user-images.githubusercontent.com/122887740/222153652-68e15c4e-5612-4a91-ad96-dba67ef49d8b.png) </br>
+
+Törmäsin yllä olevaan ongelmaan ja aikani ihmeteltyäni huomasin, että ```settings.py``` asetuksissa tuo edellä mainittu ```STATIC_ROOT = os.path.join(BASE_DIR, 'static/')``` tulee asettaa ```STATIC_URL``` kohdan alle. Tämän korjauksen jälkeen ajoin saman komennon uudelleen: </br>
+![Kuva18](https://user-images.githubusercontent.com/122887740/222153911-995196c7-1263-43b6-879f-469be45ce38d.png)</br>
+ja vielä testit perään: </br>
+![Kuva19](https://user-images.githubusercontent.com/122887740/222154244-0d5e0aba-e62d-4644-bb92-9f2f7f00d814.png)</br>
+Näytti toimivan oikein! Eli tässä tuli lisättyä HTML-sivustolle CSS tiedot, jotta muotoilu tuli oikein näkyviin.
+
+Oli vielä aika saattaa itselleen omat toimivat tunnukset ja tehdä muita konfiguraatioita Djangoon. Aloitin muunmuassa ajamalla migraatio komennot:
+```
+./manage.py makemigrations
+./manage.py migrate
+```
+
+Migraatioiden jälkeen siirryin vielä luomaan supertunnukset Djangoon komennolla ```./manage.py createsuperuser```
+
+Lopulta vielä testasin kirjautumista: </br>
+![Kuva20](https://user-images.githubusercontent.com/122887740/222156302-3d786092-61ca-4e84-b0df-2ea0d09d5de6.png) </br>
+
+Kirjautuminen onnistui ongelmitta!
+
+
+Tuotantokäyttöön konfiguroitu Django onnistui hyvin, pieniä mutkia tuli matkaan, mutta lopputulos ratkaisee!
 
 
 ## Lopetus
-
+Tämä harjoitus opetti minut konfiguroimaan Djangon tuotantokäyttöön, harjoitteisiin meni tällä erää n.2h.
 
 ## Lähteet:
 Karvinen, Tero, 2022 - Deploy Django 4 - Production Install (https://terokarvinen.com/2022/deploy-django/)
