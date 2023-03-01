@@ -101,13 +101,23 @@ Seuraavaksi kosketin ```wsgi.py``` tiedostoa touch komennolla ```touch yritysoy/
 
 Localhostissa ei ollut mitään, niin kuin ei vielä tässä vaiheessa kuulunutkaan olla. Seuraavaksi oli aika lisätä sivustolle materiaalia ja siirryinkin muokkaamaan microlla settings.py tiedostoa lisäämällä sinne tämän arvon: </br>
 ![Kuva16](https://user-images.githubusercontent.com/122887740/222150008-7eb3570c-a209-4ace-8acf-bdc6ba2dce29.png)</br>
+
+
 Tällä asetuksella määritettiin staattinen juuri sivustolle. Nyt oli aika vielä puskea uudet konfiguraatiot käyttöön komennolla ```./manage.py collectstatic``` </br>
+
+
 ![Kuva17](https://user-images.githubusercontent.com/122887740/222153652-68e15c4e-5612-4a91-ad96-dba67ef49d8b.png) </br>
 
 Törmäsin yllä olevaan ongelmaan ja aikani ihmeteltyäni huomasin, että ```settings.py``` asetuksissa tuo edellä mainittu ```STATIC_ROOT = os.path.join(BASE_DIR, 'static/')``` tulee asettaa ```STATIC_URL``` kohdan alle. Tämän korjauksen jälkeen ajoin saman komennon uudelleen: </br>
 ![Kuva18](https://user-images.githubusercontent.com/122887740/222153911-995196c7-1263-43b6-879f-469be45ce38d.png)</br>
+
+
 ja vielä testit perään: </br>
+
+
 ![Kuva19](https://user-images.githubusercontent.com/122887740/222154244-0d5e0aba-e62d-4644-bb92-9f2f7f00d814.png)</br>
+
+
 Näytti toimivan oikein! Eli tässä tuli lisättyä HTML-sivustolle CSS tiedot, jotta muotoilu tuli oikein näkyviin.
 
 Oli vielä aika saattaa itselleen omat toimivat tunnukset ja tehdä muita konfiguraatioita Djangoon. Aloitin muunmuassa ajamalla migraatio komennot:
