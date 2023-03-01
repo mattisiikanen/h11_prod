@@ -108,7 +108,7 @@ Tällä asetuksella määritettiin staattinen juuri sivustolle. Nyt oli aika vie
 
 ![Kuva17](https://user-images.githubusercontent.com/122887740/222153652-68e15c4e-5612-4a91-ad96-dba67ef49d8b.png) </br>
 
-Törmäsin yllä olevaan ongelmaan ja aikani ihmeteltyäni huomasin, että ```settings.py``` asetuksissa tuo edellä mainittu ```STATIC_ROOT = os.path.join(BASE_DIR, 'static/')``` tulee asettaa ```STATIC_URL``` kohdan alle. Tämän korjauksen jälkeen ajoin saman komennon uudelleen: </br>
+Törmäsin yllä olevaan ongelmaan ja aikani ihmeteltyäni huomasin, että ```settings.py``` asetuksissa tuo edellä mainittu ```STATIC_ROOT = os.path.join(BASE_DIR, 'static/')``` oli väärään kohtaan asetettu ja se tuli asettaa ```STATIC_URL``` kohdan alle. Tämän korjauksen jälkeen ajoin saman komennon uudelleen: </br>
 ![Kuva18](https://user-images.githubusercontent.com/122887740/222153911-995196c7-1263-43b6-879f-469be45ce38d.png)</br>
 
 
