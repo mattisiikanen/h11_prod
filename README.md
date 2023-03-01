@@ -49,7 +49,7 @@ Kuten kuvassa näkyy, sain konfiguroitua ja testattua sivuston muutoksen ongelmi
 
 ### VirtualEnv ympäristön asennus ja konfigurointi tuotantoa varten
 Klo 20:03</br>
-Sivusto konfigurointien jälkeen siirryin luomaan uutta virtuaalista ympäristö tulevalle Djangon käyttöönotolle.
+Sivusto konfigurointien jälkeen siirryin luomaan uutta virtuaalista ympäristöä tulevalle Djangon käyttöönotolle.
 Aloitin ajamalla ```sudo apt-get -y install virtualenv``` tarkistaakseni, löytyisikö edellisellä kerralla asennetulle virtualenville päivityksiä. </br>
 ![Kuva4](https://user-images.githubusercontent.com/122887740/221940954-f29c7157-e1cc-4bba-b84d-32369b6a654e.png)</br>
 Päivityksiä ei näyttänyt olevan, joten siirryin seuraavaan osioon.
