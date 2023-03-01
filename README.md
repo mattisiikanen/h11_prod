@@ -70,7 +70,7 @@ Django oli siis asennettu oikein.
 
 
 ### Djangon määrittely
-Hyppäsin ensiksi Django projektin luonnin yli, koska se oli jo tehty aiemmin. Siirryin siis suoraan Apache2:n määritystiedoston jatkokonfigurointiin ```sudoedit /etc/apache2/sites-available/yritysoy.conf``` ja syöttämällä siihen seuraavanlaiset määritteet: </br>
+Loin uuden projektin nimeltä yritysoy komennolla ```django-admin startproject yritysoy```. Seuraavaksi oli vuorossa Apache2:n määritystiedoston jatkokonfigurointia komennolla ```sudoedit /etc/apache2/sites-available/yritysoy.conf``` ja syöttämällä siihen seuraavanlaiset määritteet: </br>
 ![Kuva8](https://user-images.githubusercontent.com/122887740/221943831-51172aee-4097-4d0d-aa83-a63b2f8caf9d.png)</br>
 
 Määritteiden jälkeen oli aika siirtyä asentamaan WSGI moduuli Apachea varten ```sudo apt-get -y install libapache2-mod-wsgi-py3```: </br>
