@@ -128,7 +128,7 @@ Tuotantokäyttöön konfiguroitu Django onnistui hyvin, pieniä mutkia tuli matk
 
 
 ## Lopetus
-Tämä harjoitus opetti minut konfiguroimaan Djangon tuotantokäyttöön, harjoitteisiin meni tällä erää n.2h.
+Tämä harjoitus opetti minut konfiguroimaan Djangon tuotantokäyttöön, harjoitteisiin meni tällä erää noin 2h.
 
 ## Lähteet:
 Karvinen, Tero, 2022 - Deploy Django 4 - Production Install (https://terokarvinen.com/2022/deploy-django/)
