@@ -93,7 +93,7 @@ Viimeisenä osiona oli vielä kytkeä pois päältä Debug - mode. komennolla ``
 
 Tallensin tiedoston ja lopetin tähän tältä erää.
 
-Jatkoin seuraavana päivänä 1.3.2023 klo 15.00 käynnistämällä jälleen virtuaalikoneen. Aktivoin jälleen VirtualEnv ympäristön komennolla ```source env/bin/activate``` ja siirryin varmistamaan ympäristön ```which pip``` varmistuakseni jälleen oikeasta ympäristöstä, joka palautti seuraavaa ```/home/mattis/publicwsgi/env/bin/pip```, olin siis oikeassa ympäristössä.
+Jatkoin seuraavana päivänä 1.3.2023 klo 15.00 käynnistämällä jälleen virtuaalikoneen. Aktivoin jälleen VirtualEnv ympäristön komennolla ```source env/bin/activate``` ja siirryin varmistamaan ympäristön ```which pip``` varmistuakseni oikeasta ympäristöstä, joka palautti seuraavaa ```/home/mattis/publicwsgi/env/bin/pip```, olin siis oikeassa ympäristössä.
 
 Seuraavaksi kosketin ```wsgi.py``` tiedostoa touch komennolla ```touch yritysoy/wsgi.py``` ja käynnistin Apachen uudelleen. Nyt oli luvassa vielä testaus: </br>
 ![Kuva14](https://user-images.githubusercontent.com/122887740/222148925-cbcd58c8-a946-4c58-bce4-19ba3112c719.png)</br>
