@@ -55,7 +55,7 @@ Aloitin ajamalla ```sudo apt-get -y install virtualenv``` tarkistaakseni, löyty
 Päivityksiä ei näyttänyt olevan, joten siirryin seuraavaan osioon.
 
 
-Navigoin uuteen kansioon ```publicwsgi/``` määritelläkseni uuden virtuaaliympäristön Pythonille ja ajoin komennon ```virtualenv -p python3 --system-site-packages env```</br>:
+Navigoin uuteen kansioon ```publicwsgi/``` määritelläkseni uuden virtuaaliympäristön Pythonille ja ajoin komennon ```virtualenv -p python3 --system-site-packages env```:</br>
 ![Kuva5](https://user-images.githubusercontent.com/122887740/221941329-9a929efb-a7e0-4af5-a2a9-c2054a3cb3df.png)</br>
 
 Virtuaaliympäristön luonnista toipuneena siirryin itse virtuaaliympäristöön asentamaan Djangon siihen. Aktivoin virtuaaliympäristön ```source env/bin/activate``` ja heti perään varmistin, että olen oikeassa paikassa ```which pip```:</br>
